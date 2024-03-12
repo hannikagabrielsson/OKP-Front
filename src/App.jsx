@@ -72,7 +72,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const backendRes = await fetch('http://localhost:5143/api/DataHub');
+      const backendRes = await fetch('https://rkbackend.azurewebsites.net/api/DataHub');
       const backendData = await backendRes.json();
       setHubData(backendData);
     } catch (error) {
