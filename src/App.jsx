@@ -100,7 +100,7 @@ function App() {
               <List hubData={hubData} searchField={searchField} />
               <Footer />
             </>} />
-            <Route exact path='/OKP-Front/favorites' element={<>
+            <Route exact path='https://hannikagabrielsson.github.io/OKP-Front/favorites' element={<>
               <Header handleLoginForm={handleLoginForm} />
               <Favorites hubData={hubData} searchField={searchField}/>
               <Footer />
