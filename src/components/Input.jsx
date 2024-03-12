@@ -13,7 +13,7 @@ export const Input = ({ handleSearch }) => {
 
   const fetchBuildingNames = async () => {
     try {
-      const response = await axios.get('http://localhost:5143/api/DataHub');
+      const response = await axios.get('https://rkbackend.azurewebsites.net/api/DataHub');
       const names = response.data.data.groupedProducts.map(building => {
         const name = getBuildingName(building);
         return { name, building };
