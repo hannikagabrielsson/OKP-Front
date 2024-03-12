@@ -100,14 +100,14 @@ function App() {
               <List hubData={hubData} searchField={searchField} />
               <Footer />
             </>} />
-            <Route exact path='/favorites' element={<>
+            <Route exact path='/OKP-Front/favorites' element={<>
               <Header handleLoginForm={handleLoginForm} />
               <Favorites hubData={hubData} searchField={searchField}/>
               <Footer />
             </>}/>
-            <Route exact path="/confirm-email" element={<ConfirmEmailPage />} />
-            <Route exact path="/reset-password" element={<ResetPasswordPage />} />
-            <Route exact path='/forgot-password' element={<ForgotPasswordPage />} />
+            <Route exact path="/OKP-Front/confirm-email" element={<ConfirmEmailPage />} />
+            <Route exact path="/OKP-Front/reset-password" element={<ResetPasswordPage />} />
+            <Route exact path='/OKP-Front/forgot-password' element={<ForgotPasswordPage />} />
           </Routes>
       </BrowserRouter>
     </>

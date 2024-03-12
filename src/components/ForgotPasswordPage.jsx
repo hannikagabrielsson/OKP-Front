@@ -17,7 +17,7 @@ export const ForgotPasswordPage = () => {
     const sendResetPassword = async (e) => {
         e.preventDefault();
         
-        let response = await fetch(`http://localhost:5143/api/Account/forgot-password/${e.target.email.value}`, {
+        let response = await fetch(`https://rkbackend.azurewebsites.net/api/Account/forgot-password/${e.target.email.value}`, {
             method:'POST',
             headers: {
               'Accept': '*/*'
@@ -46,7 +46,7 @@ export const ForgotPasswordPage = () => {
 
     return (
         <div className='reset-password-wrapper'>
-            <a className='back-to-home' href='http://localhost:5173/'>Takaisin</a>
+            <a className='back-to-home' href='https://hannikagabrielsson.github.io/OKP-Front/'>Takaisin</a>
             <div className='reset-password-container'>
                 <form onSubmit={sendResetPassword} className='reset-password-form'>
                     <label htmlFor="email">Kirjoita sähköposti osoitteesi</label>

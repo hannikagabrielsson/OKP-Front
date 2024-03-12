@@ -33,7 +33,7 @@ export const ResetPasswordPage = () => {
         const token = urlParams.get("token");
         const email = urlParams.get("email");
         
-        let response = await fetch('http://localhost:5143/api/Account/reset-password', {
+        let response = await fetch('https://rkbackend.azurewebsites.net/api/Account/reset-password', {
           method:'PUT',
           headers: {
             'Content-Type':'application/json'
@@ -62,7 +62,7 @@ export const ResetPasswordPage = () => {
 
     return (
         <div className='reset-password-wrapper'>
-            <a className='back-to-home' href='http://localhost:5173/'>Takaisin</a>
+            <a className='back-to-home' href='https://hannikagabrielsson.github.io/OKP-Front/'>Takaisin</a>
             <div className='reset-password-container'>
                 <form onSubmit={resetPassword} className='reset-password-form'>
                     <label htmlFor="newPassword">Uusi Salasana</label>

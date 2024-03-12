@@ -45,7 +45,7 @@ export const List = ({ hubData }) => {
     
         try {
                 // If not favorited, add the favorite
-                const response = await axios.post('http://localhost:5143/api/Favorites', { "key": buildingId, "userId": userId });
+                const response = await axios.post('https://rkbackend.azurewebsites.net/api/Favorites', { "key": buildingId, "userId": userId });
                 console.log("Favorite added:", response);
                 return response.data;
 
@@ -64,7 +64,7 @@ export const List = ({ hubData }) => {
     
         try {
                 // If already favorited, delete the favorite
-                const response = await axios.delete(`http://localhost:5143/api/Favorites/${buildingId}`);
+                const response = await axios.delete(`https://rkbackend.azurewebsites.net/api/Favorites/${buildingId}`);
                 console.log("Favorite deleted:", response);
           
             } catch (error) {
@@ -127,7 +127,7 @@ export const List = ({ hubData }) => {
         // Toggle the heart state
     
         const fetchFavorites = async () => {
-              const backendRes = await fetch(`http://localhost:5143/api/Favorites/user-favorites/${currentUser.Id}`);
+              const backendRes = await fetch(`https://rkbackend.azurewebsites.net/api/Favorites/user-favorites/${currentUser.Id}`);
               const backendData = await backendRes.json();
               console.log(backendData);
               return backendData;

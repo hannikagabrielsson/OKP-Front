@@ -28,7 +28,7 @@ export const AuthProvider = ({ children }) => {
     const getUserFavorites = async () => {
       try {
         if (currentUser) {
-          const response = await axios.get(`http://localhost:5143/api/Favorites/user-favorites/${currentUser.Id}`);
+          const response = await axios.get(`https://rkbackend.azurewebsites.net/api/Favorites/user-favorites/${currentUser.Id}`);
           console.log(userFavorites);
           setUserFavorites(response.data);
           
@@ -48,7 +48,7 @@ export const AuthProvider = ({ children }) => {
 
   const fetchFavorites = async () => {
     try {
-      const backendRes = await fetch(`http://localhost:5143/api/DataHub/GetUserFavorites/${currentUser.Id}`);
+      const backendRes = await fetch(`https://rkbackend.azurewebsites.net/api/DataHub/GetUserFavorites/${currentUser.Id}`);
       const backendData = await backendRes.json();
       console.log(backendData);
       setFavorites(backendData);
@@ -96,7 +96,7 @@ export const AuthProvider = ({ children }) => {
   const loginUser = async (e) => {
     e.preventDefault();
     console.log('Form submitted');
-    let response = await fetch('http://localhost:5143/api/Account/login', {
+    let response = await fetch('https://rkbackend.azurewebsites.net/api/Account/login', {
       method:'POST',
       headers: {
         'Content-Type':'application/json'
@@ -130,7 +130,7 @@ export const AuthProvider = ({ children }) => {
 
   const registerUser = async (e) => {
     e.preventDefault();
-    let response = await fetch('http://localhost:5143/api/Account/register', {
+    let response = await fetch('https://rkbackend.azurewebsites.net/api/Account/register', {
       method:'POST',
       headers: {
         'Content-Type':'application/json'
@@ -166,7 +166,7 @@ export const AuthProvider = ({ children }) => {
 
     try {
       // Make POST request to backend API to save favorite status
-      const response = await axios.post('http://localhost:5143/api/Favorites', { "key":buildingId, "userId": userId });
+      const response = await axios.post('https://rkbackend.azurewebsites.net/api/Favorites', { "key":buildingId, "userId": userId });
       console.log("Succeeded favorite", response);
     } catch (error) {
       console.error('Error saving favorite:', error);

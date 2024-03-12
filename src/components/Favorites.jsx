@@ -36,7 +36,7 @@ export const Favorites = ({}) => {
         if (isLoggedIn && currentUser.Id) {
             const fetchFavorites = async () => {
                 try {
-                    const backendRes = await fetch(`http://localhost:5143/api/DataHub/GetUserFavorites/${currentUser.Id}`);
+                    const backendRes = await fetch(`https://rkbackend.azurewebsites.net/api/DataHub/GetUserFavorites/${currentUser.Id}`);
                     const backendData = await backendRes.json();
                     console.log(backendData);
                     setFavorites(backendData);
@@ -57,7 +57,7 @@ export const Favorites = ({}) => {
     const deleteFavorite = async (key) => {
         try {
             // Make POST request to backend API to save favorite status
-            const response = await axios.delete(`http://localhost:5143/api/Favorites/${key}`);
+            const response = await axios.delete(`https://rkbackend.azurewebsites.net/api/Favorites/${key}`);
             console.log("Succeeded deletion", response);
             const updatedData = {
                 data: {

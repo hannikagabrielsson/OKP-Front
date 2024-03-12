@@ -31,7 +31,7 @@ export const ConfirmEmailPage = () => {
         const token = urlParams.get("token");
         const email = urlParams.get("email");
         
-        let response = await fetch('http://localhost:5143/api/Account/confirm-email', {
+        let response = await fetch('https://rkbackend.azurewebsites.net/api/Account/confirm-email', {
           method:'PUT',
           headers: {
             'Content-Type':'application/json'
@@ -58,7 +58,7 @@ export const ConfirmEmailPage = () => {
     const ResendEmailConformation = async (e) => {
       e.preventDefault();
       console.log(e.target.email.value);
-      let response = await fetch(`http://localhost:5143/api/Account/resend-email-confirmation-link/${e.target.email.value}`, {
+      let response = await fetch(`https://rkbackend.azurewebsites.net/api/Account/resend-email-confirmation-link/${e.target.email.value}`, {
         method:'POST',
         headers: {
           'Accept': '*/*'
