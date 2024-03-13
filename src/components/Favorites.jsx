@@ -5,7 +5,7 @@ import { Popup } from './CardPopUp.jsx';
 import { getBuildingName} from './Maps.jsx';
 import '../styles/List.css';
 import arrowLeft from '../assets/arrowLeft.png';
-import arrowRight from '../assets/arrowRight.png';
+import arrowRight from '../assets/arrowRIght.png';
 import wholeHeart from '../assets/whole-heart.png';
 import emptyHeart from '../assets/emptyHeart.png';
 import close from '../assets/close.png';
