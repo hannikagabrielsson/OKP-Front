@@ -7,7 +7,6 @@ import arrowLeft from '../assets/arrowLeft.png'
 import arrowRight from '../assets/arrowRight.png'
 import emptyHeart from '../assets/emptyHeart.png'
 import pin from '../assets/pin.png'
-<assets />
 
 
 import React from 'react';
