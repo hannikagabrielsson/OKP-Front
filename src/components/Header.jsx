@@ -28,7 +28,7 @@ export const Header = ({handleLoginForm}) => {
                         </figure>
                     </Link>
                     <a >{currentUser["capitalized"]}</a>
-                    <a href='#' onClick={logout}>KIRJAUDU ULOS</a>
+                    <a className="login" href='#' onClick={logout}>KIRJAUDU ULOS</a>
                     <figure>
                         <img className='arrow' src={arrowOut} alt="logout" />
                     </figure>
