@@ -46,7 +46,7 @@ export const ForgotPasswordPage = () => {
 
     return (
         <div className='reset-password-wrapper'>
-            <a className='back-to-home' href='https://hannikagabrielsson.github.io/OKP-Front/'>Takaisin</a>
+            <a className='back-to-home' href='/'>Takaisin</a>
             <div className='reset-password-container'>
                 <form onSubmit={sendResetPassword} className='reset-password-form'>
                     <label htmlFor="email">Kirjoita sähköposti osoitteesi</label>

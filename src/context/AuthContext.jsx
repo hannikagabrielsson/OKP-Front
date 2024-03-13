@@ -9,7 +9,7 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
 
   const navigateToNewPage = () => {
-    window.location.href = '/OKP-Front';
+    window.location.href = '/';
   };
 
   localStorage.getItem("authToken") ? JSON.parse(localStorage.getItem("authToken")) : null

@@ -10,7 +10,7 @@ export const ConfirmEmailError = ({ message }) => {
         <>  
             <div className='back-to-home-conf-error-div'>
 
-                <a className='back-to-home-conf-error' href='https://hannikagabrielsson.github.io/OKP-Front/'>Takaisin</a>
+                <a className='back-to-home-conf-error' href='/'>Takaisin</a>
             </div>
             <div className="popup2">
                 <h2>Epäonnistui!</h2>
