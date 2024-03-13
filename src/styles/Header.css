@@ -65,6 +65,10 @@
     color: var(--black);
   }
   
+  a {
+    text-decoration: none;
+    color:  #1b1b1a;
+  }
   .arrow {
     max-height: 2rem;
     padding-block-start: 5px;

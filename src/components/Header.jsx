@@ -21,7 +21,7 @@ export const Header = ({handleLoginForm}) => {
                 </figure>
             {isLoggedIn ? (
                 <div className='login header-grid-item'>
-                    <a href='/OKP-Front'>KOTI</a>
+                    <a className="login" href='/OKP-Front'>KOTI</a>
                     <Link to="/OKP-Front/favorites">
                         <figure>
                             <img className='header-heart' src={wholeHeart} alt="heart"/>
