@@ -87,7 +87,7 @@ function App() {
     <>
       <BrowserRouter>
           <Routes>
-            <Route exact path='/OKP-Front' element={<>
+            <Route exact path='/' element={<>
               <Header handleLoginForm={handleLoginForm} />
               <Input handleSearch={handleSearch} searchField={searchField} markers={hubData.data?.groupedProducts || []} hubData={hubData} />
               <Login loginForm={loginForm} handleLoginForm={handleLoginForm} />
@@ -100,14 +100,14 @@ function App() {
               <List hubData={hubData} searchField={searchField} />
               <Footer />
             </>} />
-            <Route exact path='https://hannikagabrielsson.github.io/OKP-Front/favorites' element={<>
+            <Route exact path='/favorites' element={<>
               <Header handleLoginForm={handleLoginForm} />
               <Favorites hubData={hubData} searchField={searchField}/>
               <Footer />
             </>}/>
-            <Route exact path="/OKP-Front/confirm-email" element={<ConfirmEmailPage />} />
-            <Route exact path="/OKP-Front/reset-password" element={<ResetPasswordPage />} />
-            <Route exact path='/OKP-Front/forgot-password' element={<ForgotPasswordPage />} />
+            <Route exact path="/confirm-email" element={<ConfirmEmailPage />} />
+            <Route exact path="/reset-password" element={<ResetPasswordPage />} />
+            <Route exact path='/forgot-password' element={<ForgotPasswordPage />} />
           </Routes>
       </BrowserRouter>
     </>
