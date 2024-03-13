@@ -4,7 +4,7 @@ import arrowDown from '../assets/arrow-down.png'
 import { Popup } from './CardPopUp.jsx'
 import '../styles/List.css'
 import arrowLeft from '../assets/arrowLeft.png'
-import arrowRight from '../assets/arrowRight.png'
+import arrowRight from '../assets/arrowRIght.png'
 import emptyHeart from '../assets/emptyHeart.png'
 import pin from '../assets/pin.png'
 
