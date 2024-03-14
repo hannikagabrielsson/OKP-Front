@@ -162,7 +162,7 @@ export const Login = ({loginForm, handleLoginForm}) => {
                   </div>
                   <div className="forgot-password-link">
                     <span>Unohtuiko salasana?</span>
-                    <Link to="/forgot-password" className='link33'>VAIHDA SALASANA</Link>
+                    <Link to="OKP-Front/forgot-password" className='link33'>VAIHDA SALASANA</Link>
                   </div>
                 </form>
                 </div>)}
