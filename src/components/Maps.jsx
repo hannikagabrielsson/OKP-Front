@@ -24,7 +24,8 @@ const center = {
 const libraries = ['places'];
 
 const API_BASE_URL = 'http://api.openweathermap.org/data/2.5/weather';
-const API_KEY = import.meta.env.VITE_REACT_APP_API_KEY;
+const API_KEY = '49468c45b926ce15e743a2cfd6f9195a';
+// const API_KEY = import.meta.env.VITE_REACT_APP_API_KEY;
 
 export const getBuildingName = (building) => {
   if (!building || !building.productInformations || !building.productImages) {
@@ -66,8 +67,7 @@ export const getBuildingName = (building) => {
 
 export const Maps = ({searchField, hubData}) => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_APIKEY,
-    libraries,
+    googleMapsApiKey: 'AIzaSyAJL6FeRCpkXvTlxpoXHS_RJCD2GZ-tnXc',
   });
   const [map, setMap] = useState(null);
   const [mapBounds, setMapBounds] = useState(null);
