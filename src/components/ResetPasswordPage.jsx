@@ -23,7 +23,7 @@ export const ResetPasswordPage = () => {
     };
 
     const navigateToNewPage = () => {
-        window.location.href = '/';
+        window.location.href = '/OKP-Front';
       };
 
     const resetPassword = async (e) => {

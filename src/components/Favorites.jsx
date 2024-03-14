@@ -29,7 +29,7 @@ export const Favorites = ({}) => {
    
   // Example of redirecting programmatically
     if (!isLoggedIn) {
-        navigate('/');
+        navigate('/OKP-Front');
     }
 
     useEffect(() => {

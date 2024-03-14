@@ -11,7 +11,7 @@ export const ConfirmEmailPage = () => {
     const [resendErrorMessage, setResendErrorMessage] = useState(null);
 
     const navigateToNewPage = () => {
-        window.location.href = '/';
+        window.location.href = '/OKP-Front';
       };
 
     //   useEffect(() => {

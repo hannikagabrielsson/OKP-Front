@@ -9,7 +9,7 @@ export const ForgotPasswordPage = () => {
     const [type, setType] = useState(null);
 
     const navigateToNewPage = () => {
-        window.location.href = '/';
+        window.location.href = '/OKP-Front';
       };
 
 
