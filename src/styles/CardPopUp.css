@@ -15,9 +15,7 @@
 
 .cardPopup {
     background: var(--pink);
-    width: 70%;
-    /* padding: 1.2rem; */
-    /* padding: 5.2rem 2.2rem 2.2rem 2.2rem;; */
+    width: 70vw;
     border-radius: 0.5rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
     position: fixed;
@@ -44,6 +42,25 @@
     right: 2%;
 
 }
+
+
+/* .popupCard {
+  padding: 4rem 3rem;
+    background: var(--white);
+    border: solid var(--black) 0.14rem;
+    border-radius: 0.5rem;
+    position: fixed;
+    overflow-y: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90vw;
+    max-height: 70vh;
+}
+ */
+
+
+
 
 .h2-zoom {
     margin-block-end: 5rem;
@@ -124,6 +141,20 @@
       top: 1rem;
       width: 95%;
     }
+/* 
+    .cardPopup {
+      background: var(--pink);
+      width: 70%;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.8);
+      position: fixed;
+      top: 2rem;
+      bottom: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+   */
 
     .info-and-photo-container {
       flex-direction: column;
