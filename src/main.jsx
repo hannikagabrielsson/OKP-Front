@@ -11,7 +11,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { ForgotPasswordPage } from './components/ForgotPasswordPage.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+
     <AuthProvider>
       <App />
       {/* <BrowserRouter>
@@ -23,5 +23,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         </Routes>
       </BrowserRouter> */}
     </AuthProvider>
-  </React.StrictMode>,
 )
