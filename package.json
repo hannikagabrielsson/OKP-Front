@@ -2,11 +2,12 @@
   "name": "okp-front",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://hannikagabrielsson.github.io/OKP-Front",
   "type": "module",
   "proxy": "http://localhost:5289/",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "netlify deploy --prod",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
