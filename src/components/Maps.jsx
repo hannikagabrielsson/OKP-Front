@@ -23,7 +23,7 @@ const center = {
 
 const libraries = ['places'];
 
-const API_BASE_URL = 'http://api.openweathermap.org/data/2.5/weather';
+const API_BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 const API_KEY = '49468c45b926ce15e743a2cfd6f9195a';
 // const API_KEY = import.meta.env.VITE_REACT_APP_API_KEY;
 

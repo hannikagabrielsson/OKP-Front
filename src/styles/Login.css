@@ -145,6 +145,8 @@
     font-size: 1.2rem;
     max-width: 265px;
     margin: auto;
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.6rem;
   }
 
   .user-registered-success {
@@ -155,6 +157,7 @@
     margin: auto;
     padding-top: 1rem;
     font-family: 'Mulish', sans-serif;
+    line-height: 1.6rem;
   }
 
 
